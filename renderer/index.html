@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NotepadMac</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="titlebar">NotepadMac</div>
+  <div id="tab-bar">
+    <div id="tabs-container"></div>
+    <button id="btn-new-tab" title="New Tab (⌘T)">+</button>
+  </div>
+
+  <div id="toolbar">
+    <button id="btn-format-json" title="Format JSON (⌘⇧F)">{ } JSON</button>
+    <button id="btn-compare" title="Compare two tabs">⇔ Compare</button>
+    <button id="btn-find" title="Find &amp; Replace (⌘F)">⌕ Find</button>
+    <button id="btn-find-all" title="Find in all tabs (⌘⌥⇧F)">⌕ Find in All</button>
+    <button id="btn-open-file" title="Open File (⌘O)">Open File</button>
+    <button id="btn-close-diff" hidden title="Close diff view">✕ Close Diff</button>
+    <button id="btn-theme" title="Toggle theme">☀ Light</button>
+    <span id="lang-label">Plain Text</span>
+  </div>
+
+  <!-- Find & Replace panel -->
+  <div id="find-replace-panel" hidden>
+    <div id="fr-row1">
+      <input id="fr-find" type="text" placeholder="Find…" spellcheck="false">
+      <button id="fr-prev" title="Previous (⇧Enter)">↑</button>
+      <button id="fr-next" title="Next (Enter)">↓</button>
+    </div>
+    <div id="fr-row2">
+      <input id="fr-replace" type="text" placeholder="Replace…" spellcheck="false">
+      <button id="fr-replace-one">Replace</button>
+      <button id="fr-replace-all">All</button>
+    </div>
+    <div id="fr-options">
+      <label><input type="checkbox" id="fr-regex"> Regex</label>
+      <label><input type="checkbox" id="fr-case"> Case</label>
+      <button id="fr-close" title="Close (Esc)">✕</button>
+    </div>
+  </div>
+
+  <div id="main-area">
+    <div id="editor-area">
+      <div id="editor-container"></div>
+      <div id="diff-container" hidden></div>
+    </div>
+
+    <!-- Find in all tabs panel -->
+    <div id="find-all-panel" hidden>
+      <div id="fa-header">
+        <span>Find in All Tabs</span>
+        <button id="fa-close">✕</button>
+      </div>
+      <div id="fa-controls">
+        <input id="fa-query" type="text" placeholder="Search…" spellcheck="false">
+        <button id="fa-search">Search</button>
+      </div>
+      <div id="fa-opts">
+        <label><input type="checkbox" id="fa-regex"> Regex</label>
+        <label><input type="checkbox" id="fa-case"> Case</label>
+      </div>
+      <div id="fa-results"></div>
+    </div>
+  </div>
+
+  <div id="status-bar">
+    <span id="status-path">Untitled</span>
+    <span id="status-right">
+      <span id="status-pos">Ln 1, Col 1</span>
+      <span id="status-chars">0 chars</span>
+      <span id="status-encoding" title="Click to change encoding">UTF-8</span>
+      <span id="status-line-ending" title="Click to change line ending">LF</span>
+    </span>
+  </div>
+
+  <!-- Compare modal -->
+  <div id="compare-modal" hidden>
+    <div id="compare-modal-inner">
+      <h3>Compare Tabs</h3>
+      <div class="compare-row">
+        <label>Tab A</label>
+        <select id="compare-a"></select>
+      </div>
+      <div class="compare-row">
+        <label>Tab B</label>
+        <select id="compare-b"></select>
+      </div>
+      <div class="modal-btns">
+        <button id="compare-go">Compare</button>
+        <button id="compare-cancel">Cancel</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="bundle.js" defer></script>
+</body>
+</html>
