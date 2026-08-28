@@ -2,7 +2,7 @@
 
 Notepad++ inspired text editor for macOS built with Electron + CodeMirror 6.
 
-## Como lançar
+## Start the App
 
 ```bash
 npm start
