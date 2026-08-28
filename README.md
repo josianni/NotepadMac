@@ -9,18 +9,21 @@ cd ~/Documents/myProjects/notepadmac
 npm start
 ```
 
-## Funcionalidades
+## Features
 
-| Funcionalidade | Como usar |
-|---|---|
-| Novo tab | `⌘T` ou botão `+` |
-| Fechar tab | `⌘W` ou `×` no tab |
-| Navegar tabs | `⌘1` a `⌘9` |
-| Auto-save | Automático (500ms após editar) → `~/NotepadMac/` |
-| Save com nome | `⌘S` (primeira vez abre dialog) |
-| Save As | `⌘⇧S` |
-| Abrir ficheiro | `⌘O` ou botão "Open File" |
-| Formatar JSON | `⌘⇧F` ou botão "{ } Format JSON" |
-| Comparar tabs | Botão "⇔ Compare" → escolhe Tab A e B |
-| Syntax highlight | Automático por extensão (`.json`, `.js`, `.py`, `.html`, `.sql`, `.md`, `.css`, `.ts`…) |
-| Persistência | Fechar e reabrir restaura todos os tabs e conteúdo |
+| Funcionalidade / Feature | Como usar / How to use |
+| --- | --- |
+| Novo tab / New tab           | `⌘T` ou botão `+` |
+| Fechar tab / Close tab       | `⌘W` ou `×` no tab |
+| Navegar tabs / Navigate tabs | `⌘1` a `⌘9` |
+| Auto-save                    | Auto (500ms) → `~/NotepadMac/` |
+| Save com nome / Save as name | `⌘S` (primeira vez abre dialog) |
+| Save As                      | `⌘⇧S` |
+| Abrir arquivo / Open File.   | `⌘O` ou botão "Open File" |
+| Formatar JSON / Format JSON  | `⌘⇧F` ou botão "{ } Format JSON" |
+| Comparar tabs / Compare tabs | Botão "⇔ Compare" → escolhe Tab A e B |
+| Syntax highlight             | Automático por extensão (`.json`, `.js`, `.py`, `.html`, `.sql`, `.md`, `.css`, `.ts`…) |
+| Persistência                 | Fechar e reabrir restaura todos os tabs e conteúdo |
+
+
+
