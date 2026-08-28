@@ -5,7 +5,6 @@ Notepad++ inspired text editor for macOS built with Electron + CodeMirror 6.
 ## Como lançar
 
 ```bash
-cd ~/Documents/myProjects/notepadmac
 npm start
 ```
 
