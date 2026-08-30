@@ -28,7 +28,7 @@ npm start
 
 ![Simple Editor](/home_page/screen1.png)
 
-### Comapre tabs
+### Compare tabs
 
 ![Compare Editor](/home_page/screen2.png)
 
